@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match-It</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fdf6e3;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.button {
+  width: 120px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.play-online {
+  background-color: #d8eafd;
+  color: #333;
+}
+
+.play-offline {
+  background-color: #faeacb;
+  color: #333;
+}
+
+.button p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.icon {
+  font-size: 32px;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">MATCH-IT</h1>
+    <div class="buttons">
+      <div class="button play-online">
+        <p>PLAY ONLINE</p>
+        <div class="icon">&#9658;</div>
+      </div>
+      <div class="button play-offline">
+        <p>PLAY OFFLINE</p>
+        <div class="icon">&#9658;</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
